@@ -74,10 +74,32 @@ int main()
 			break;
 		}
 		default :
-			printf("You've entered a wrong choice.\n\nEnter your choice (1-9):");
+			printf("You've entered a wrong choice.\n\nYour choices are :\n");
+			printf("\n1. Addition");
+			printf("\n2. Substraction");
+			printf("\n3. Multiplicaton");
+			printf("\n4. Division");
+			printf("\n5. Average");
+			printf("\n6. Percenetage");
+			printf("\n7. Square root");
+			printf("\n8. Power");
+			printf("\n9. Exit");
+			printf("\nEnter your choice (1-9) :");
 			goto x;
 			break;
 	}
+	system("pause");
+	printf("\n1. Addition");
+	printf("\n2. Substraction");
+	printf("\n3. Multiplicaton");
+	printf("\n4. Division");
+	printf("\n5. Average");
+	printf("\n6. Percenetage");
+	printf("\n7. Square root");
+	printf("\n8. Power");
+	printf("\n9. Exit");
+	printf("\nEnter your choice (1-9) :");
+	goto x;
 	return 0;
 }
 int addition() //Code for addition operation
@@ -92,7 +114,7 @@ int addition() //Code for addition operation
 		scanf("%f",&num);
 		sum=sum+num;
 	}	
-	printf("Result :%f",sum);
+	printf("Result :%f\n",sum);
 	return 0;
 }
 int substraction() //Code for substraction operation 
@@ -108,7 +130,7 @@ int substraction() //Code for substraction operation
 	{
 		sub=b-a;
 	}
-	printf("Result :%f",sub);
+	printf("Result :%f\n",sub);
 	return 0;
 }
 int multiplication() //Code for multiplication operation
@@ -123,7 +145,7 @@ int multiplication() //Code for multiplication operation
 		scanf("%f",&num);
 		m=m*num;
 	}	
-	printf("Result :%f",m);
+	printf("Result :%f\n",m);
 	return 0;
 }
 int division() //Code for division operation
@@ -132,7 +154,7 @@ int division() //Code for division operation
 	printf("Enter the numbers :");
 	scanf("%f\n%f",&a,&b);
 	div=a/b;
-	printf("Result :%f",div);
+	printf("Result :%f\n",div);
 	return 0;
 }
 int average() //Code for average operation
@@ -148,7 +170,7 @@ int average() //Code for average operation
 		sum=sum+num;
 	}	
 	avg=sum/n;
-	printf("Result :%f",avg);
+	printf("Result :%f\n",avg);
 	return 0;
 }
 int percentage() //Code for percentage operation
@@ -159,7 +181,7 @@ int percentage() //Code for percentage operation
 	printf("Enter the number out of which you want to calculate the percentage :");
 	scanf("%f",&b);
 	c=(a/b)*100;
-	printf("Result :%f",c);
+	printf("Result :%f\n",c);
 	return 0;
 }
 int squareroot() //Code for Square root operation
@@ -168,7 +190,7 @@ int squareroot() //Code for Square root operation
 	printf("Enter the number :");
 	scanf("%f",&n);
 	sr=sqrt(n);
-	printf("Result :%f",sr);
+	printf("Result :%f\n",sr);
 	return 0;
 }
 int power() //Code for power operation
@@ -179,6 +201,6 @@ int power() //Code for power operation
 	printf("Enter the power :");
 	scanf("%f",&p);
 	r=pow(n,p);
-	printf("Result :%f",r);
+	printf("Result :%f\n",r);
 	return 0;	
 }
